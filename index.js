@@ -30,7 +30,7 @@ app.use(
 app.post("/predict", (req, res) => {
   const promt = req.body.promt;
   axios
-    .post(`http://fd31-35-240-210-71.ngrok.io/process`, { promt })
+    .post(`http://f9ff-34-87-153-130.ngrok.io/process`, { promt })
     .then((response) => {
       res.send(response.data);
       console.log(response.data);

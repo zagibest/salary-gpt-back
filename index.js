@@ -28,8 +28,8 @@ app.use(
 );
 
 app.get("/predict", (req, res) => {
-  const prompt = req.query.promt;
-  axios.post(`http://dbb3-35-240-210-71.ngrok.io`, prompt).then((response) => {
+  const promt = req.query.promt;
+  axios.post(`http://dbb3-35-240-210-71.ngrok.io`, promt).then((response) => {
     res.send(response.data);
   });
   // res.send("Hello World!");
